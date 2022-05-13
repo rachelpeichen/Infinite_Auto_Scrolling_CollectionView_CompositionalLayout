@@ -31,7 +31,7 @@ class ViewController: UIViewController {
         self.view.addSubview(demoView1)
 
         demoView1.contentArray = dataArray as [AnyObject]
-        demoView1.isAutoScrollEnabled = true
+        demoView1.isAutoScrollEnabled = false
         demoView1.timeInterval = 2.0
         demoView1.isPageControlShown = true
         demoView1.currentPageControlColor = .orange
@@ -44,8 +44,6 @@ class ViewController: UIViewController {
         demoView2.isAutoScrollEnabled = true
         demoView2.timeInterval = 2.0
         demoView2.isPageControlShown = false
-//        demoView2.currentPageControlColor = .brown
-//        demoView2.pageControlTintColor = .lightGray
         demoView2.delegate = self
     }
 }
@@ -55,7 +53,7 @@ extension ViewController: InfiniteAutoScrollViewDelegate {
     
     func didTapItem(_ collectionView: UICollectionView, selectedItem item: Int) {
         if collectionView == demoView2.collectionView {
-            print("🦄 demoView2 Item \(item) is tapped")
+            print("🥑 🥑 demoView2 Item \(item) is tapped")
         } else {
             print("🥑 demoView1 Item \(item) is tapped")
         }
