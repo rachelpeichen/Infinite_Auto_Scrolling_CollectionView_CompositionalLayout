@@ -34,7 +34,6 @@ class InfiniteAutoScrollViewCell: UICollectionViewCell {
     }
     
     private func initCell() {
-        // .backgroundColor = .yellow // Helper for layout
         addSubview(imageView)
         imageView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([

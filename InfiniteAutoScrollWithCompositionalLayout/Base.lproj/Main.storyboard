@@ -16,8 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="00j-ri-i1J" customClass="InfiniteAutoScrollView" customModule="InfiniteAutoScrollWithCompositionalLayout" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="348" width="414" height="200"/>
+                            <view autoresizesSubviews="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="00j-ri-i1J" customClass="InfiniteAutoScrollView" customModule="InfiniteAutoScrollWithCompositionalLayout" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="562" width="414" height="200"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="HNy-ES-mjH"/>
@@ -29,7 +29,7 @@
                         <constraints>
                             <constraint firstItem="00j-ri-i1J" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="N2d-cE-5Fz"/>
                             <constraint firstItem="00j-ri-i1J" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="c3S-fa-5kE"/>
-                            <constraint firstItem="00j-ri-i1J" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="cen-nU-cwy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="00j-ri-i1J" secondAttribute="bottom" constant="100" id="fS7-JA-eJP"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="00j-ri-i1J" secondAttribute="trailing" id="np6-8J-D5d"/>
                         </constraints>
                     </view>

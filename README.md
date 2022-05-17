@@ -7,7 +7,7 @@
 - User still can swipe to next item when auto-scrolling enabled
 - Infinite loop effect
 - Use UICollectionViewCompositionalLayout for simplify building layout
-- Can set up view by storyboard or programmatically
+- Can set up view by storyboard
 - Page control and auto-scrolling can be customized
 
 ## Dependencies

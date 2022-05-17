@@ -17,6 +17,7 @@ class InfiniteAutoScrollView: UIView {
     weak var delegate: InfiniteAutoScrollViewDelegate?
     var collectionView: UICollectionView!
     var pageControl: UIPageControl!
+    var currentFrame: CGRect!
     var autoScrollTimer: Timer!
     var currentAutoScrollIndex = 1
    
@@ -94,13 +95,20 @@ class InfiniteAutoScrollView: UIView {
     
     // MARK: - Custom UI Layout Methods
     func initCollectionView() {
-        collectionView = UICollectionView(frame: self.bounds, collectionViewLayout: createCompositionalLayout())
+        collectionView = UICollectionView(frame: .zero, collectionViewLayout: createCompositionalLayout())
         collectionView.dataSource = self
         collectionView.delegate = self
         collectionView.register(InfiniteAutoScrollViewCell.self, forCellWithReuseIdentifier: "InfiniteAutoScrollViewCell")
-        // collectionView.backgroundColor = .systemMint // Helper for layout
         collectionView.showsHorizontalScrollIndicator = false
-        self.addSubview(collectionView)
+        collectionView.translatesAutoresizingMaskIntoConstraints = false
+        addSubview(collectionView)
+        
+        NSLayoutConstraint.activate([
+            collectionView.topAnchor.constraint(equalTo: self.topAnchor),
+            collectionView.leadingAnchor.constraint(equalTo: self.leadingAnchor),
+            collectionView.trailingAnchor.constraint(equalTo: self.trailingAnchor),
+            collectionView.bottomAnchor.constraint(equalTo: self.bottomAnchor)
+        ])
         
         if isPageControlShown {
             addPageControl()
@@ -208,13 +216,13 @@ extension InfiniteAutoScrollView {
     }
 
     @objc func autoScrollAction(timer: Timer) {
-        if self.window != nil {
+//        if self.window != nil {
             currentAutoScrollIndex += 1
             if currentAutoScrollIndex >= contentArray.count {
                 currentAutoScrollIndex = currentAutoScrollIndex % contentArray.count
             }
             collectionView.scrollToItem(at: IndexPath(item: currentAutoScrollIndex, section: 0), at: .left, animated: true)
-        }
+//        }
     }
 }
 
