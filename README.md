@@ -5,12 +5,12 @@
 
 ## Features
 
-- Scroll to next item automatically or manualy
-- User still can swipe to next item when auto-scrolling enabled
-- Infinite loop effect
+- The banner can scroll to next item automatically or manually
+- User can swipe to next item even when auto-scrolling enabled
+- The banner is displayed in infinite loop effect
 - Use **`UICollectionViewCompositionalLayout`** for building layout simply
-- Can easily set up view by storyboard
-- Page control and auto-scrolling can be customized
+- Can be easily set up on storyboard
+- Page control, auto-scrolling, and scrolling time interval can be customized
 
 ## Development Environment
 
