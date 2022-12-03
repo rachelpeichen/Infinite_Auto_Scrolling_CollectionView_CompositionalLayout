@@ -12,15 +12,18 @@
 - Can easily set up view by storyboard
 - Page control and auto-scrolling can be customized
 
-## Dependencies
+## Development Environment
 
 * Swift 5
 * iOS 15.4
 * Xcode 13.3.1
 * macOS Monterey version 12.3
 
+## Getting Started
+Clone repo or download `.zip` files and open `.xcodeproj` file then you can build on your computer 😊
+
 ## Acknowledgments
-* Credit Photo by [JOSHUA COLEMAN](https://unsplash.com/@joshstyle?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/backgrounds/colors?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+Credit Photo by [JOSHUA COLEMAN](https://unsplash.com/@joshstyle?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/backgrounds/colors?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 
 ## Contact
 Rachel Chen rachel.hp.chen@gmail.com
