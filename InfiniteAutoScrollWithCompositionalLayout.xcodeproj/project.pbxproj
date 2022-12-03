@@ -18,6 +18,7 @@
 		D1300C7F282E757200122349 /* InfiniteAutoScrollWithCompositionalLayoutUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1300C7E282E757200122349 /* InfiniteAutoScrollWithCompositionalLayoutUITestsLaunchTests.swift */; };
 		D1300C8C282E75BF00122349 /* InfiniteAutoScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1300C8B282E75BF00122349 /* InfiniteAutoScrollView.swift */; };
 		D1300C8E282E761B00122349 /* InfiniteAutoScrollViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1300C8D282E761B00122349 /* InfiniteAutoScrollViewCell.swift */; };
+		D1300C9928337FAC00122349 /* UIDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1300C9828337FAC00122349 /* UIDevice+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		D1300C7E282E757200122349 /* InfiniteAutoScrollWithCompositionalLayoutUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfiniteAutoScrollWithCompositionalLayoutUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D1300C8B282E75BF00122349 /* InfiniteAutoScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfiniteAutoScrollView.swift; sourceTree = "<group>"; };
 		D1300C8D282E761B00122349 /* InfiniteAutoScrollViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfiniteAutoScrollViewCell.swift; sourceTree = "<group>"; };
+		D1300C9828337FAC00122349 /* UIDevice+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				D1300C64282E757100122349 /* Assets.xcassets */,
 				D1300C66282E757100122349 /* LaunchScreen.storyboard */,
 				D1300C69282E757100122349 /* Info.plist */,
+				D1300C9828337FAC00122349 /* UIDevice+Extension.swift */,
 			);
 			path = InfiniteAutoScrollWithCompositionalLayout;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1300C8C282E75BF00122349 /* InfiniteAutoScrollView.swift in Sources */,
+				D1300C9928337FAC00122349 /* UIDevice+Extension.swift in Sources */,
 				D1300C60282E757100122349 /* ViewController.swift in Sources */,
 				D1300C5C282E757100122349 /* AppDelegate.swift in Sources */,
 				D1300C8E282E761B00122349 /* InfiniteAutoScrollViewCell.swift in Sources */,

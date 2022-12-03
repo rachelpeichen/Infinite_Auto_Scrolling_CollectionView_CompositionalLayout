@@ -138,8 +138,8 @@ class InfiniteAutoScrollView: UIView {
     }
     
     func createHorizontalScrollLayoutSection() -> NSCollectionLayoutSection {
-        let itemInset = 10.0
-        let sectionMargin = 30.0
+        let itemInset = 5.0
+        let sectionMargin = 15.0
 
         // Item
         let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1))
@@ -149,7 +149,9 @@ class InfiniteAutoScrollView: UIView {
         
         // Group
         let pageWidth = collectionView.bounds.width - sectionMargin * 2
+        print("pageWidth = \(collectionView.bounds.width)")
         let layoutGroupSize = NSCollectionLayoutSize(widthDimension: .absolute(CGFloat(pageWidth)), heightDimension: .estimated(self.frame.height))
+        print("self.frame.height = \(self.frame.height)")
         let layoutGroup = NSCollectionLayoutGroup.horizontal(layoutSize: layoutGroupSize, subitems: [layoutItem])
         
         // Section
